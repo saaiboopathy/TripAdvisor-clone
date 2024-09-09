@@ -1,0 +1,301 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    align-items: center;
+    text-align: center;
+    padding: 10px 10px;
+    width: 70%;
+    margin: 20px auto;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    height: 40px;
+    width: auto;
+}
+
+.navbar__section2 {
+    display: flex;
+    padding: 10px 10px;
+    justify-content: space-around;
+    gap: 30px;
+    font-weight: bold;
+
+}
+
+.navbar__section2 p,
+.navbar__section3 p {
+    padding: 10px 10px;
+    margin: 0%;
+    font-weight: 600;
+    border-bottom: 2px solid white;
+}
+
+.navbar__section2 p:hover,
+.navbar__section3 p:hover {
+    cursor: pointer;
+    border-bottom: 2px solid black;
+}
+
+.navbar__section3 {
+    display: flex;
+    padding: 10px 10px;
+    gap: 10px;
+    align-items: center;
+}
+
+.navbar__section3--button {
+    background-color: black;
+    color: white;
+    padding: 7px;
+    border-radius: 30px;
+    border: solid 1px white;
+}
+
+.navbar__section3--button:hover {
+    background-color: lightgreen;
+    color: white;
+    border: solid 1px white;
+}
+
+.categorybar {
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.categorybar--header {
+
+    text-align: center;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: 55px;
+}
+
+.categorybar__section1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+}
+
+/******* The below Css is code is for categorybar buttons ********/
+.searchall,
+.hotels,
+.thingstodo,
+.restaurants,
+.flights,
+.holidayhomes {
+    background: none;
+    border: none;
+    color: black;
+    font-size: 16px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 8px;
+    border-bottom: 2px solid white;
+}
+
+.searchall:hover,
+.hotels:hover,
+.thingstodo:hover,
+.restaurants:hover,
+.flights:hover,
+.holidayhomes:hover {
+    border-bottom: 2px solid black;
+}
+
+/****** The above Css code is for searchbar and it's buttons ******/
+
+.searchbar {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 5px 5px;
+    width: 50%;
+    flex-grow: 1;
+    border: 1px solid lightgrey;
+    border-radius: 30px;
+    margin: 20px auto;
+}
+
+.searchbar input {
+    width: 100%;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 30px;
+}
+
+.searchbar input:focus {
+    outline: none;
+}
+
+.searchbar--button {
+    padding: 14px 30px;
+    border-radius: 30px;
+    border: none;
+    background-color: lightgreen;
+    color: black;
+    border: 1px solid white;
+}
+
+
+.searchbar--button:hover {
+    background-color: lightgreen;
+    color: black;
+    transition: 0.5s;
+    border: 1px solid green;
+}
+
+/* The below code is for cover section 1 and 2 */
+
+.coversection1 {
+    display: flex;
+    flex-wrap: wrap;
+    height: 400px;
+    margin: 20px auto;
+    padding: 10px 10px;
+    max-width: 70%;
+    border: 1px solid saddlebrown;
+}
+
+.coversection1 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.coversection2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    align-items: center;
+    padding: 10px 10px;
+    background-color: lightpink;
+    border: 1px solid saddlebrown;
+    width: 70%;
+    margin: 20px auto;
+    position: relative;
+}
+
+.coversection2__desc {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 10px;
+    font-weight: 400;
+    font-size: 12px;
+    flex-grow: 1;
+}
+
+.coversection2--desc {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.coversection2__button {
+    padding: 10px;
+    align-self: flex-end;
+}
+
+.coversection2 img {
+    padding: 10px 10px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.coversection2--button {
+    padding: 10px 10px;
+    border: none;
+    border-radius: 30px;
+}
+
+.coversection2--button:hover {
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+}
+
+.award_container1 {
+    justify-content: center;
+    margin: 20px auto;
+    width: 70%;
+    padding: 10px 10px;
+    border: 1px solid saddlebrown;
+}
+
+.award_container__header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.award_container2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+    margin: 10px auto;
+    width: 72%;
+    border: 1px solid saddlebrown;
+    position: relative;
+
+}
+
+.award_container2--category1, .award_container2--category2, .award_container2--category3, .award_container2--category4 {
+    position: relative;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    width: 230px;
+    height: 300px;
+}
+
+.award_container2--category1 img, .award_container2--category2 img, .award_container2--category3 img, .award_container2--category4 img {
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.award_container2--category1 h1, .award_container2--category2 h1, .award_container2--category3 h1, .award_container2--category4 h1{
+    position: absolute;
+    bottom: 10px;
+    left: 50px;
+    right: 50px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+}
+
+.award_container2--rightarrow{
+    position: absolute;
+    right: 0;
+    bottom: 50%;
+    top: 50%;
+    right: -20px;
+    font-size: xx-large;
+}
+
+.award_container2--rightarrow img{
+width: 40px;
+height: 40px;
+background-color: white;
+border-radius: 50%;
+border: none;
+}
+
