@@ -6,13 +6,13 @@
 
 .navbar {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     background-color: white;
     align-items: center;
     text-align: center;
     padding: 10px 10px;
-    width: 75%;
-    margin: 20px auto;
+    width: 100%;
     position: sticky;
     top: 0;
     z-index: 1;
@@ -418,7 +418,7 @@
 
 }
 
-.footer_container{
+.footer_container {
     width: 70%;
     margin: 20px auto;
     display: flex;
@@ -427,26 +427,29 @@
     gap: 70px;
 }
 
-.footer_section1, .footer_section2, .footer_section3{
+.footer_section1,
+.footer_section2,
+.footer_section3 {
     line-height: 1.5;
 }
 
-.footer_section4{
+.footer_section4 {
     margin-left: auto;
 }
 
 
 /* the belwo code is for footer container 1 */
-.footer_container1{
-    width: 50%;
-    margin: 20px 210px;
+.footer_container1 {
+    width: 70%;
+    margin: 20px auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 70px;
-    
+
 }
-.footer_container2{
+
+.footer_container2 {
     width: 70%;
     margin: 20px auto;
     display: flex;
@@ -493,7 +496,7 @@
 }
 
 
-.footer--desc{
+.footer--desc {
     flex-basis: 60%;
     margin-top: 20px;
     flex-wrap: wrap;
@@ -504,6 +507,28 @@
 .footer_container1_section2 select {
     padding: 10px 60px;
     border-radius: 5px;
-    border: 1px solid lightgray; 
+    border: 1px solid lightgray;
 }
 
+@media screen and (max-width:800px) {
+    body {
+        font-size: 10px;
+    }
+
+    .footer_section4 {
+        display: none;
+    }
+}
+@media screen and (max-width:800px) {
+    body{
+        font-size: 10px;
+    }
+
+    .award_container2--rightarrow{
+        display: none;
+    }
+
+    .footer_container, .footer_container1_section1--copyrights--options1{
+        display: none;
+    }
+}
